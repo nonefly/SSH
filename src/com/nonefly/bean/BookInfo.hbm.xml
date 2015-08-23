@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.nonefly.bean.BookInfo" table="book" catalog="test">
+        <id name="bookId" type="java.lang.Integer">
+            <column name="bookId" />
+            <generator class="native"></generator>
+        </id>
+        <property name="detail" type="java.lang.String">
+            <column name="detail" length="30" />
+        </property>
+        <property name="bookAuthor" type="java.lang.String">
+            <column name="bookAuthor" length="20" />
+        </property>
+        <property name="bookImage" type="java.lang.String">
+            <column name="bookImage" length="30" />
+        </property>
+        <property name="bookEdition" type="java.lang.Integer">
+            <column name="bookEdition" />
+        </property>
+        <property name="bookPageNum" type="java.lang.Integer">
+            <column name="bookPageNum" />
+        </property>
+        <property name="isbn" type="java.lang.String">
+            <column name="Isbn" length="20" />
+        </property>
+        <property name="bookSize" type="java.lang.Integer">
+            <column name="bookSize" />
+        </property>
+        <property name="bookWordNum" type="java.lang.Integer">
+            <column name="bookWordNum" />
+        </property>
+        <property name="bookOrigPrice" type="java.lang.Float">
+            <column name="bookOrigPrice" precision="12" scale="0" />
+        </property>
+        <property name="bookContext" type="java.lang.String">
+            <column name="bookContext" length="500" />
+        </property>
+        <property name="bookRecommend" type="java.lang.String">
+            <column name="bookRecommend" length="200" />
+        </property>
+        <property name="bookNum" type="java.lang.Integer">
+            <column name="bookNum" />
+        </property>
+        <property name="bookDiscount" type="java.lang.Float">
+            <column name="bookDiscount" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
